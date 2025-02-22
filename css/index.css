@@ -327,7 +327,7 @@ h6 {
     margin: auto;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1600px) {
     .circular-frame .swiper {
         max-width: 100% !important;
     }
