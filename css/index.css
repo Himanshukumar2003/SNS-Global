@@ -327,9 +327,17 @@ h6 {
     margin: auto;
 }
 
+@media (min-width: 1400px) {
+    .circular-frame .swiper {
+        max-width: 100% !important;
+    }
+
+}
+
 .circular-frame .swiper {
     width: 100%;
     max-width: 70%;
+    min-height: 500px;
     border-radius: 500px 500px 10px 10px;
     box-shadow: -29px 29px 0px 0px var(--primary-color);
     overflow: hidden;
@@ -338,6 +346,7 @@ h6 {
 .circular-frame img {
     object-fit: cover;
     width: 100%;
+    min-height: 500px;
 }
 
 .content-wrapper {
