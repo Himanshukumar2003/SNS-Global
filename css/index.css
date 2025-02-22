@@ -329,7 +329,7 @@ h6 {
 
 .circular-frame .swiper {
     width: 100%;
-    max-width: 400px;
+    max-width: 70%;
     border-radius: 500px 500px 10px 10px;
     box-shadow: -29px 29px 0px 0px var(--primary-color);
     overflow: hidden;
@@ -510,6 +510,8 @@ h6 {
 .feature-list {
     padding: 20px;
     border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
 }
 
 .feature-item {
