@@ -695,7 +695,7 @@ h6 {
 .footer {
     background-color: #0d3b46;
     color: white;
-    padding: 50px 0;
+    padding: 60px 0 0 0;
 }
 .footer-logo {
     font-size: 24px;
@@ -732,7 +732,9 @@ h6 {
 }
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    margin-top: 20px;
-    padding-top: 15px;
+   margin: 0;
+   padding: 5px;
     text-align: center;
 }
+
+.footer li{margin-top: 10px;}
