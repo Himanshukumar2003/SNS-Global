@@ -252,11 +252,20 @@ button:hover {
     box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
 }
 
+.fixed-nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999999;
+    transition: all 1s
+}
+
 
 
 .navbar {
     background-color: white;
     padding: 10px 0;
+    transition: all 1s;
 }
 
 .navbar-brand {
@@ -536,23 +545,26 @@ position: relative;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    height: 100%;
+    padding: 20px;
     text-align: center;
 }
 
+
 .icons {
-    width: 60px;
-    height: 60px;
-    background-color: var(--primary-color);
+    
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
 }
 
-.icons i {
-    color: white;
-    font-weight: 900;
-    font-size: 30px;
+.icons img {
+    mix-blend-mode: multiply;
+    width: 80px;
+    height: 80px;
 }
 
 
