@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Cardo:wght@400;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
 
 
 :root {
@@ -41,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     line-height: 1.2em;
 }
@@ -54,7 +59,7 @@ h1 {
 
 h2 {
     font-size: 2.8em;
-    font-weight: 700;
+    font-weight: 500;
 }
 
 h3 {
@@ -185,19 +190,72 @@ h6 {
 .section {
     padding: 60px 0;
 }
-.section-two{  padding:100px 0 60px 0;
+
+.section-two {
+    padding: 100px 0 60px 0;
 }
 
 
 
 
 
+button {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 25px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+button i {
+    font-size: 20px;
+}
+
+/* Button 1 - Contact Now with Scale Animation */
+.btn1 {
+    background: var(--gradient-primary);
+    color: white;
+    animation: pulse 1.5s infinite alternate;
+    padding: 12px 30px;
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+
+}
+
+.btn1 i {}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Hover Effects */
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+}
 
 
 
 .navbar {
-    background-color: var(--nav-bg);
-    padding: 1rem 0;
+    background-color: white;
+    padding: 10px 0;
 }
 
 .navbar-brand {
@@ -215,8 +273,17 @@ h6 {
     margin-right: 10px;
 }
 
+
+.navbar-nav{
+position: relative;
+}
+
+
+
+
+
 .nav-link {
-    color: var(--white) !important;
+    color: var(--black) !important;
     font-weight: 500;
     padding: 0.5rem 1rem !important;
     transition: color 0.3s ease;
@@ -224,7 +291,7 @@ h6 {
 
 .nav-link:hover,
 .nav-link.active {
-    color: var(--secndry-color) !important;
+    color: var(--primary-color) !important;
 }
 
 .navbar-toggler {
@@ -296,7 +363,8 @@ h6 {
     position: relative;
     display: flex;
     align-items: center;
-    min-height: 80vh; /* Better for smaller screens */
+    min-height: 80vh;
+    /* Better for smaller screens */
     background: rgba(17, 61, 72, 0.7);
     padding: 50px 0;
 }
@@ -373,8 +441,8 @@ h6 {
 
 .learn-more-btn {
     background-color: transparent;
-    border: 2px solid white;
-    color: white;
+    border: 2px solid var(--white);
+    color: var(--white);
     padding: 0.75rem 2rem;
     border-radius: 50px;
     transition: all 0.3s ease;
@@ -565,12 +633,14 @@ h6 {
     overflow: hidden;
     max-width: 400px;
 }
+
 .blog-card img {
     width: 100%;
     height: auto;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
+
 .badge-custom {
     position: absolute;
     top: 15px;
@@ -581,36 +651,43 @@ h6 {
     padding: 5px 10px;
     border-radius: 20px;
 }
+
 .blog-content {
     padding: 20px;
 }
+
 .blog-content h5 {
     font-weight: bold;
     color: #074b5d;
 }
+
 .blog-content .meta {
     font-size: 14px;
     color: #6c757d;
 }
+
 .blog-content .meta i {
     margin-right: 5px;
 }
+
 .blog-content p {
     font-size: 15px;
     color: #555;
     margin-top: 10px;
 }
+
 .blog-content a {
     text-decoration: none;
     color: var(--primary-color);
     font-weight: bold;
 }
+
 .blog-content a:hover {
     text-decoration: underline;
 }
 
 
-.heading-section{
+.heading-section {
     max-width: 800px;
     margin: auto;
     margin-bottom: 10px;
@@ -694,6 +771,7 @@ h6 {
     color: white;
     padding: 60px 0 0 0;
 }
+
 .footer-logo {
     font-size: 24px;
     font-weight: bold;
@@ -701,6 +779,7 @@ h6 {
     align-items: center;
     gap: 10px;
 }
+
 .footer-logo img {
     width: 170px
 }
@@ -713,25 +792,32 @@ h6 {
     overflow: hidden;
 
 }
+
 .footer h5 {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
 .footer a {
     color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
 }
+
 .footer a:hover {
     color: white;
 }
+
 .footer .contact-info i {
     margin-right: 10px;
 }
+
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-   margin: 0;
-   padding: 5px;
+    margin: 0;
+    padding: 5px;
     text-align: center;
 }
 
-.footer li{margin-top: 10px;}
+.footer li {
+    margin-top: 10px;
+}
