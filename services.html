@@ -16,7 +16,7 @@
 </head>
 
 <body>
-        <nav class="navbar   navbar-expand-lg">
+    <nav class="navbar   navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" class="logo">
@@ -28,13 +28,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">HOME</a>
+                        <a class="nav-link " href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="services.html">SERVICES</a>
+                        <a class="nav-link active" href="services.html">SERVICES</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">BlOGS</a>
@@ -56,7 +56,7 @@
     <section class="peage-header">
         <div class="container">
         <div class="page-dettiles">
-                <h1 class="hero-title">About Us</h1>
+                <h1 class="hero-title">OUR SERVICES</h1>
                 <!-- <div class="pages-link d-flex">
                     <p><i class="bi bi-house"></i> Home</p>/<p>About</p>
                 </div> -->
@@ -64,7 +64,53 @@
         </div>
     </section>
 
- 
+    <div class="section bg-light">
+        <div class="container">
+            <div class="text-center heading-section">
+                <h2 data-aos="fade-right" data-aos-delay="200">​​Our Services
+
+                </h2>
+                <p class="about-description" data-aos="fade-left" data-aos-delay="400">
+                    SNS Global offers a comprehensive suite of MICE, event management, hospitality, and travel
+                    solutions, ensuring seamless execution for corporate, luxury, and high-profile clients. Whether it's
+                    a global conference, an incentive trip, or an exclusive brand showcase, we handle every aspect with
+                    expertise and precision.
+                </p>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-4">
+                    <div class="service-card position-relative " data-aos="fade-up" data-aos-delay="200">
+                        <img src="img/heder-img.jpeg" alt="Service Image">
+                        <div class="rating-badge"><i class="bi bi-star-fill"></i> 5.0</div>
+                        <div class="service-content">
+                            <h5>MICE & Event Management Services
+                            </h5>
+                            <p>MICE (Meetings, Incentives, Conferences, and Exhibitions) & Event Management Services
+                                focus on planning and executing corporate events, business gatherings, and large-scale
+                                exhibitions.
+                            </p>
+                            <a href="mice-and-event-management-services.html">LEARN MORE...</a>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="service-card position-relative" data-aos="fade-up" data-aos-delay="400">
+                        <img src="img/heder-img.jpeg" alt="Service Image">
+                        <div class="rating-badge"><i class="bi bi-star-fill"></i> 5.0</div>
+                        <div class="service-content">
+                            <h5>Additional c& Corporate Event Services
+                            </h5>
+                            <p>Additional & Corporate Event Services include a wide range of specialized solutions to
+                                enhance business gatherings, product launches, and corporate celebrations.
+                            </p>
+                            <a href="additional-and-corporate-event-services.html">LEARN MORE...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -127,7 +173,10 @@
     <script src="/js/index.js"></script>
 
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
     </script>
 </body>
 

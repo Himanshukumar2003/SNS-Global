@@ -16,7 +16,7 @@
 </head>
 
 <body>
-        <nav class="navbar   navbar-expand-lg">
+    <nav class="navbar   navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.png" class="logo">
@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">HOME</a>
+                        <a class="nav-link " href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">ABOUT US</a>
@@ -37,7 +37,7 @@
                         <a class="nav-link" href="services.html">SERVICES</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="blog.html">BlOGS</a>
+                        <a class="nav-link active" href="blog.html">BlOGS</a>
                     </li>
 
                     <li class="nav-item">
@@ -56,7 +56,7 @@
     <section class="peage-header">
         <div class="container">
         <div class="page-dettiles">
-                <h1 class="hero-title">About Us</h1>
+                <h1 class="hero-title">BlOGS</h1>
                 <!-- <div class="pages-link d-flex">
                     <p><i class="bi bi-house"></i> Home</p>/<p>About</p>
                 </div> -->
@@ -64,7 +64,80 @@
         </div>
     </section>
 
- 
+    <div class="our-blog section">
+        <div class="container">
+            <div class="text-center heading-section">
+                <h2 data-aos="fade-left" data-aos-delay="200">Our blog </h2>
+                <p class="about-description" data-aos="fade-right" data-aos-delay="400">
+                    In addition to event planning and execution, SNS Global offers specialized PR and
+                    communications services to amplify brand presence and media engagement for our clients.
+                </p>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="position-relative">
+                            <img src="img/header-img-2.jpg" alt="Blog Image">
+                            <span class="badge-custom">Holiday</span>
+                        </div>
+                        <div class="blog-content">
+                            <h5>Connect With the Second Life Here</h5>
+                            <div class="meta d-flex align-items-center">
+                                <i class="bi bi-calendar"></i> August 16, 2024
+                                <span class="mx-3">|</span>
+                                <i class="bi bi-chat"></i> 0
+                            </div>
+                            <p>Primis beatae augue autem, ipsa asperiores velit tempora lectus facere nullam? Facilisi
+                                lacus
+                                diam dis...</p>
+                            <a href="#">LEARN MORE...</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="position-relative">
+                            <img src="img/header-img-2.jpg" alt="Blog Image">
+                            <span class="badge-custom">Holiday</span>
+                        </div>
+                        <div class="blog-content">
+                            <h5>Connect With the Second Life Here</h5>
+                            <div class="meta d-flex align-items-center">
+                                <i class="bi bi-calendar"></i> August 16, 2024
+                                <span class="mx-3">|</span>
+                                <i class="bi bi-chat"></i> 0
+                            </div>
+                            <p>Primis beatae augue autem, ipsa asperiores velit tempora lectus facere nullam? Facilisi
+                                lacus
+                                diam dis...</p>
+                            <a href="#">LEARN MORE...</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="blog-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="position-relative">
+                            <img src="img/header-img-2.jpg" alt="Blog Image">
+                            <span class="badge-custom">Holiday</span>
+                        </div>
+                        <div class="blog-content">
+                            <h5>Connect With the Second Life Here</h5>
+                            <div class="meta d-flex align-items-center">
+                                <i class="bi bi-calendar"></i> August 16, 2024
+                                <span class="mx-3">|</span>
+                                <i class="bi bi-chat"></i> 0
+                            </div>
+                            <p>Primis beatae augue autem, ipsa asperiores velit tempora lectus facere nullam? Facilisi
+                                lacus
+                                diam dis...</p>
+                            <a href="#">LEARN MORE...</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -127,7 +200,10 @@
     <script src="/js/index.js"></script>
 
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            once: true
+        });
     </script>
 </body>
 
