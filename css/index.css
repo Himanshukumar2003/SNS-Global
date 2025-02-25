@@ -779,7 +779,7 @@ position: relative;
 
 /*  */
 .footer {
-    background-color: #0d3b46;
+    background: #0d3b46;
     color: white;
     padding: 60px 0 0 0;
 }
@@ -805,18 +805,20 @@ position: relative;
 
 }
 
-.footer h5 {
-    font-weight: bold;
+.footer h6 {
     margin-bottom: 20px;
+    color: white;
+    font-weight: 800;
+    text-align: left;
 }
 
 .footer a {
-    color: rgba(255, 255, 255, 0.7);
     text-decoration: none;
+    color: white;
 }
 
 .footer a:hover {
-    color: white;
+    color: var(--primary-color);
 }
 
 .footer .contact-info i {
