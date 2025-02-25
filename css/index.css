@@ -24,7 +24,7 @@ body {
     --border-color: #00acc3;
 
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #00acc3 0%, #008b9f 100%);
+    --gradient-primary: linear-gradient(135deg, #00acc3 0%, #007a8a 50%, #004d56 100%);    ;
     --gradient-secondary: linear-gradient(135deg, #ffd2b2 0%, #ffb999 100%);
 
     /* Font Sizes */
@@ -224,6 +224,7 @@ button i {
     animation: pulse 1.5s infinite alternate;
     padding: 12px 30px;
     display: flex;
+    border-radius: 10px;
     gap: 10px;
     text-decoration: none;
 
@@ -658,7 +659,6 @@ position: relative;
 
 .blog-content h5 {
     font-weight: bold;
-    color: #074b5d;
 }
 
 .blog-content .meta {

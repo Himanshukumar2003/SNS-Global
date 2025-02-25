@@ -111,3 +111,28 @@ iframe {
     font-size: 1.2rem;
     color: white;
 }
+
+
+.services i{
+    font-size: 2rem
+
+}
+
+
+
+.travel-services ul li {
+    font-size: 18px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+}
+.travel-services ul li i {
+    color: var(--primary-color);
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.service-img img{
+    border-radius: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}

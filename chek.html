@@ -3,111 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MICE & Event Management</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Cardo:ital@1&display=swap" rel="stylesheet">
+    <title>Travel Services</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <style>
-        :root {
-            --primary-color: #00acc3;
-            --secndry-color: #ffd2b2;
-            --nav-bg: #00adc4;
-            --background-color: rgba(17, 61, 72, 0.7);
-            --text-color: #160803;
-            --white: #ffffff;
-            --black: #000000;
-            --border-color: #00acc3;
-            --gradient-primary: linear-gradient(135deg, #00acc3 0%, #008b9f 100%);
-            --gradient-secondary: linear-gradient(135deg, #ffd2b2 0%, #ffb999 100%);
-            --font-size-small: 13px;
-            --font-size-medium: 20px;
-            --font-size-large: 36px;
-            --font-size-x-large: 42px;
-            --font-family-primary: "Inter", sans-serif;
-            --font-family-secondary: "Cardo", serif;
-        }
         body {
-            font-family: var(--font-family-primary);
-            background-color: var(--background-color);
-            color: var(--text-color);
+            font-family: "Inter", sans-serif;
+            background-color: #f8f9fa;
         }
-        .header {
-            background: var(--gradient-primary);
-            padding: 20px;
-            text-align: center;
-            color: var(--white);
-            font-size: var(--font-size-large);
-            font-weight: 600;
-        }
-        .service-card {
-            background: var(--white);
+        .travel-services {
+            background: var(--gradient-primary, linear-gradient(135deg, #e0faff, #00acc3));
+            padding: 40px;
             border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease-in-out;
+            color: var(--text-color, #160803);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
         }
-        .service-card:hover {
-            transform: translateY(-5px);
+        .travel-services h2 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 20px;
         }
-        .btn-custom {
-            background: var(--primary-color);
-            color: var(--white);
-            border-radius: 5px;
-            padding: 10px 15px;
+        .travel-services ul {
+            list-style: none;
+            padding: 0;
         }
-        .btn-custom:hover {
-            background: var(--secndry-color);
-            color: var(--black);
+        .travel-services ul li {
+            font-size: 18px;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+        .travel-services ul li i {
+            color: #00acc3;
+            font-size: 20px;
+            margin-right: 10px;
         }
     </style>
 </head>
 <body>
-    <div class="header">MICE & Event Management Services</div>
-    <div class="container mt-4">
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="service-card text-center p-3">
-                    <img src="https://via.placeholder.com/150" class="img-fluid mb-3" alt="Venue Research">
-                    <h4>Venue Research & Booking</h4>
-                    <p>We identify, negotiate, and book top-tier venues to align with your event goals and brand image.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card text-center p-3">
-                    <img src="https://via.placeholder.com/150" class="img-fluid mb-3" alt="Event Planning">
-                    <h4>Event Planning & Production</h4>
-                    <p>From concept to execution, we handle all aspects of event planning, ensuring a seamless experience.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card text-center p-3">
-                    <img src="https://via.placeholder.com/150" class="img-fluid mb-3" alt="Incentive Travel">
-                    <h4>Incentive Travel & Management</h4>
-                    <p>We organize exclusive, tailor-made incentive trips to stunning destinations with complete management.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card text-center p-3">
-                    <img src="https://via.placeholder.com/150" class="img-fluid mb-3" alt="Buyer Seller Meets">
-                    <h4>Buyer-Seller Meets</h4>
-                    <p>We facilitate structured B2B meetings, business matchmaking, and industry collaborations.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card text-center p-3">
-                    <img src="https://via.placeholder.com/150" class="img-fluid mb-3" alt="Exhibition Booking">
-                    <h4>Exhibition Space Booking</h4>
-                    <p>We assist in booking and selling exhibition spaces at trade shows, ensuring maximum visibility.</p>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-card text-center p-3">
-                    <img src="https://via.placeholder.com/150" class="img-fluid mb-3" alt="Travel Services">
-                    <h4>Travel Services</h4>
-                    <p>Offering corporate and individual travel solutions, including ticketing, visas, and transportation.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
