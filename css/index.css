@@ -209,14 +209,14 @@ button:hover {
 
 
 .nav-link {
-    color: var(--black) !important;
+    color: var(--black) ;
     font-weight: 500;
     padding: 0.5rem 1rem !important;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover,
-.nav-link.active {
+.active {
     color: var(--primary-color) !important;
 }
 
@@ -256,10 +256,16 @@ button:hover {
         width: 100% !important;
     }
 
+
+
     .navbar-collapse {
-        background-color: var(--nav-bg);
+        background-color: var(--white);
         padding: 1rem;
         margin-top: 0.5rem;
+    }
+
+    .nav-link .active {
+        color: white  ;
     }
 
     .nav-item {
