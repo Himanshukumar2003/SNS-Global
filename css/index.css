@@ -805,13 +805,12 @@ button:hover {
 }
 
 .parallax-section .overlay {
-    background-image: url('../img/bg-2.jpg');
+    background-image: url('../img/bg-3.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-position 0.1s linear;
-    /* Smooth effect */
 
 }
 
@@ -827,9 +826,20 @@ button:hover {
     text-align: center;
     flex: 1;
     border-right: 2px solid var(--primary-color);
-    padding: 0 20px;
+    padding:  20px;
     color: white;
 }
+
+.stat-item p{
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.stat-item h1{
+    font-size: 3rem;
+
+}
+
 
 .stat-item:last-child {
     border-right: none;

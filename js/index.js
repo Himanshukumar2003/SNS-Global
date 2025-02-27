@@ -73,3 +73,44 @@ var swiper = new Swiper('.banner', {
         prevEl: '.swiper-button-prev',
     },
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    var statsSection = document.querySelector(".stats-container");
+    var statNumbers = document.querySelectorAll(".stat-item h1");
+    var animationTriggered = false;
+
+    function animateNumbers() {
+        statNumbers.forEach((element) => {
+            var target = parseFloat(element.getAttribute("data-target"));
+            var current = 0;
+            var increment = target / 100; // Smooth count
+            var duration = 2000; // 2 seconds
+            var stepTime = duration / 100;
+
+            var counter = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    element.innerHTML = target + element.innerHTML.replace(/[0-9.]+/, ""); // Keep existing text
+                    clearInterval(counter);
+                } else {
+                    element.innerHTML = Math.round(current) + element.innerHTML.replace(/[0-9.]+/, "");
+                }
+            }, stepTime);
+        });
+    }
+
+    var observer = new IntersectionObserver(
+        function (entries, observer) {
+            if (entries[0].isIntersecting && !animationTriggered) {
+                animateNumbers();
+                animationTriggered = true; // Prevents re-triggering
+                observer.disconnect(); // Stops observing after first trigger
+            }
+        },
+        { threshold: 0.5 }
+    );
+
+    observer.observe(statsSection);
+});
