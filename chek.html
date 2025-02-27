@@ -12,72 +12,14 @@
             background-color: #f8f9fa;
         }
         .stat-item h1 {
-            font-size: 2.5rem;
             font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <div class="row stats-container text-center">
-        <div class="col-md-3 stat-item">
-            <h1 data-target="75">0k+</h1>
-            <p>Happy Travellers</p>
-        </div>
-        <div class="col-md-3 stat-item">
-            <h1 data-target="95">0%</h1>
-            <p>Success Traveller</p>
-        </div>
-        <div class="col-md-3 stat-item">
-            <h1 data-target="4.9">0 <i class="bi bi-star-fill"></i></h1>
-            <p>Rating Client</p>
-        </div>
-        <div class="col-md-3 stat-item">
-            <h1 data-target="23">0+</h1>
-            <p>Experience</p>
-        </div>
-    </div>
-
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            var statsSection = document.querySelector(".stats-container");
-            var statNumbers = document.querySelectorAll(".stat-item h1");
-            var animationTriggered = false;
-
-            function animateNumbers() {
-                statNumbers.forEach((element) => {
-                    var target = parseFloat(element.getAttribute("data-target"));
-                    var current = 0;
-                    var increment = target / 100; // Smooth count
-                    var duration = 2000; // 2 seconds
-                    var stepTime = duration / 100;
-
-                    var counter = setInterval(() => {
-                        current += increment;
-                        if (current >= target) {
-                            element.innerHTML = target + element.innerHTML.replace(/[0-9.]+/, ""); // Keep existing text
-                            clearInterval(counter);
-                        } else {
-                            element.innerHTML = Math.round(current) + element.innerHTML.replace(/[0-9.]+/, "");
-                        }
-                    }, stepTime);
-                });
-            }
-
-            var observer = new IntersectionObserver(
-                function (entries, observer) {
-                    if (entries[0].isIntersecting && !animationTriggered) {
-                        animateNumbers();
-                        animationTriggered = true; // Prevents re-triggering
-                        observer.disconnect(); // Stops observing after first trigger
-                    }
-                },
-                { threshold: 0.5 }
-            );
-
-            observer.observe(statsSection);
-        });
-    </script>
+   
+    <script> </script>
 
 </body>
 </html>
