@@ -811,6 +811,7 @@ button:hover {
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-position 0.1s linear;
+    
 
 }
 
@@ -820,13 +821,15 @@ button:hover {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 20px;
+    
 }
 
 .stat-item {
     text-align: center;
+    
     flex: 1;
     border-right: 2px solid var(--primary-color);
-    padding:  20px;
     color: white;
 }
 
