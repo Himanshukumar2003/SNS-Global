@@ -8,6 +8,10 @@ body {
 }
 
 
+.img{
+    border-radius: 20px;
+}
+
 :root {
     /* Primary Colors */
     --primary-color: #00acc3;
@@ -796,6 +800,8 @@ position: relative;
     width: 170px
 }
 
+
+
 .footer-logo {
     border-radius: 20px;
     background-color: white;
@@ -834,4 +840,19 @@ position: relative;
 
 .footer li {
     margin-top: 10px;
+}
+
+
+
+
+.dubai-feature-list li{
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+
+.dubai-feature-list li i{
+color: var(--primary-color);
+font-size: 20px;
 }

@@ -44,3 +44,19 @@ document.addEventListener("DOMContentLoaded", function () {
         },
     });
 });
+
+
+
+
+var swiper = new Swiper(".expanding", {
+    loop: false,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: false, // Remove next & prev buttons
+});
