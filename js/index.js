@@ -60,3 +60,16 @@ var swiper = new Swiper(".expanding", {
     },
     navigation: false, // Remove next & prev buttons
 });
+
+
+var swiper = new Swiper('.banner', {
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
