@@ -112,12 +112,14 @@ p a:hover {
 }
 
 .social-links a:hover {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
 }
 
 .icon-circle i {
     font-size: 1.2rem;
     color: white;
+    font-weight: 800;
+
 }
 
 
