@@ -74,6 +74,17 @@ iframe {
     gap: 1rem;
 }
 
+.contact-info-item a{
+    text-decoration: none;
+}
+
+p a:hover {
+    color: var(--primary-color) !important;
+  }
+  
+
+
+
 .icon-circle {
     width: 40px;
     height: 40px;
@@ -81,18 +92,17 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.location-icon {
     background:var(--gradient-primary);
 }
+.icon-circle i{
+    font-size: 30px;
+    color: white;
 
-.call-icon {
-    background:var(--gradient-primary);
 }
 
 .social-links {
-    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid var(--primary-color);
 }
 
 .social-links a {
