@@ -767,7 +767,9 @@ button:hover {
 
 .footer .social-links{
     display: flex;
+    border: 0px;
     gap: 20px;
+    padding: 0;
 
 }
 
