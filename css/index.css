@@ -206,18 +206,18 @@ button:hover {
 
 
 
-.dropdown-menu{
-border-top: 2px solid var(--border-color);
+.dropdown-menu {
+    border-top: 2px solid var(--border-color);
 }
 
-.dropdown-menu .dropdown-item:hover{
-     background-color: var(--primary-color);
-     color: white;
+.dropdown-menu .dropdown-item:hover {
+    background-color: var(--primary-color);
+    color: white;
 }
 
 
 .nav-link {
-    color: var(--black) ;
+    color: var(--black);
     font-weight: 500;
     padding: 0.5rem 1rem !important;
     transition: color 0.3s ease;
@@ -273,7 +273,7 @@ border-top: 2px solid var(--border-color);
     }
 
     .nav-link .active {
-        color: white  ;
+        color: white;
     }
 
     .nav-item {
@@ -693,7 +693,7 @@ border-top: 2px solid var(--border-color);
 }
 
 
-.service-card p{
+.service-card p {
     display: -webkit-box;
     overflow: hidden;
     -webkit-line-clamp: 5;
@@ -780,6 +780,13 @@ border-top: 2px solid var(--border-color);
     color: var(--primary-color);
 }
 
+.footer .contact-info li {
+    display: flex;
+    margin-top: 0px;
+
+
+}
+
 .footer .contact-info i {
     margin-right: 10px;
 }
@@ -827,29 +834,29 @@ border-top: 2px solid var(--border-color);
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-position 0.1s linear;
-    
+
 
 }
 
 .stats-container {
     padding: 40px;
-    border-radius: 10px;    
+    border-radius: 10px;
 }
 
 .stat-item {
     text-align: center;
-    
+
     flex: 1;
     border-right: 2px solid var(--primary-color);
     color: white;
 }
 
-.stat-item p{
+.stat-item p {
     font-size: 21px;
     font-weight: 600;
 }
 
-.stat-item h1{
+.stat-item h1 {
     font-size: 3rem;
 
 }
@@ -912,6 +919,7 @@ border-top: 2px solid var(--border-color);
     margin: auto;
     padding: 20px;
 }
+
 .gallery-item {
     border-radius: 10px;
     overflow: hidden;
@@ -919,10 +927,12 @@ border-top: 2px solid var(--border-color);
     background: #fff;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .gallery-item:hover {
     transform: translateY(-5px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
+
 .gallery-item img {
     width: 100%;
     height: 250px;
@@ -931,7 +941,7 @@ border-top: 2px solid var(--border-color);
 }
 
 
-.banner{
+.banner {
     border-radius: 40px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
