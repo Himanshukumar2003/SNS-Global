@@ -685,6 +685,14 @@ button:hover {
 }
 
 
+.service-card p{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+
+
+}
 
 .service-footer {
     display: flex;
