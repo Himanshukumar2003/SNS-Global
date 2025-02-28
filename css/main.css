@@ -69,7 +69,7 @@ iframe {
 
 .contact-info-item {
     display: flex;
-    align-items: center;
+    align-items: start;
     margin-bottom: 1.5rem;
     gap: 1rem;
 }
@@ -119,7 +119,6 @@ p a:hover {
     font-size: 1.2rem;
     color: white;
     font-weight: 800;
-
 }
 
 
