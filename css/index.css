@@ -592,8 +592,9 @@ button:hover {
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 400px;
 }
+
+
 
 .blog-card img {
     width: 100%;
@@ -763,6 +764,21 @@ button:hover {
     overflow: hidden;
 
 }
+
+.social-links{
+    display: flex;
+    gap: 20px;
+
+}
+
+.social-links i{
+    font-size: 21px
+}
+
+
+
+
+
 
 .footer h6 {
     margin-bottom: 20px;
