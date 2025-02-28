@@ -116,6 +116,10 @@ iframe {
 
 }
 
+.img-round{
+    transform: rotate(180deg) scaleY(-1);
+
+}
 
 
 .travel-services ul li {

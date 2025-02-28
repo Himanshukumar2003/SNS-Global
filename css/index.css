@@ -891,7 +891,7 @@ button:hover {
 
 .gallery-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
     margin: auto;
     padding: 20px;
@@ -912,4 +912,10 @@ button:hover {
     height: 250px;
     object-fit: cover;
     border-radius: 10px 10px 0 0;
+}
+
+
+.banner{
+    border-radius: 40px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

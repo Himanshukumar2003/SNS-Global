@@ -23,10 +23,7 @@ var swiper = new Swiper(".hero-swiper", {
         delay: 3000,
         disableOnInteraction: false,
     },
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
+    pagination: false,
     navigation: false, // Remove next & prev buttons
 });
 
