@@ -765,13 +765,13 @@ button:hover {
 
 }
 
-.social-links{
+.footer .social-links{
     display: flex;
     gap: 20px;
 
 }
 
-.social-links i{
+.footer .social-links i{
     font-size: 21px
 }
 
