@@ -16,7 +16,7 @@ body {
     /* Primary Colors */
     --primary-color: #00acc3;
     --secndry-color: #ffd2b2;
-
+    --fancybox-zIndex: 9999;
     /* Navigation & Background */
     --nav-bg: #00adc4;
     --background-color: rgba(17, 61, 72, 0.7);
@@ -889,4 +889,32 @@ button:hover {
 .swiper-button-prev i {
     font-size: 24px;
     color: white;
+}
+
+
+
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin: auto;
+    padding: 20px;
+}
+.gallery-item {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+.gallery-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
 }
