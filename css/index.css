@@ -817,12 +817,7 @@ button:hover {
 
 .stats-container {
     padding: 40px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 20px;
-    
+    border-radius: 10px;    
 }
 
 .stat-item {
