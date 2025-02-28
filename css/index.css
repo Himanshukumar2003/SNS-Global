@@ -773,6 +773,10 @@ button:hover {
 
 }
 
+.footer .social-links a{
+margin: 0;
+}
+
 .footer .social-links i{
     font-size: 21px
 }
