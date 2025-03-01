@@ -967,3 +967,47 @@ margin: 0;
     border-radius: 40px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
+
+
+.card {
+    transition: all.5s;
+    border-radius: 20px;
+    border: 2px dotted var(--primary-color);
+}
+
+.card:hover {
+    background: rgba(17, 61, 72, 0.7) !important;
+    color: white;
+    border: none;
+
+}
+
+
+
+/*  */
+
+.valu {
+    border-radius:20px;
+    background: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+    transition: all 0.3s ease;
+    height: 100%;
+    border-top: 4px solid var(--border-color);
+}
+
+.valu:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    border-top-color: #6c757d;
+}
+
+.valu-icon {
+    font-size: 2rem;
+    color: #0d6efd;
+    margin-bottom: 1rem;
+}
+
+.valu-content {
+    padding: 20px;
+}
+
