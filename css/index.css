@@ -1016,3 +1016,11 @@ margin: 0;
     display: block;
     margin: auto;
 }
+
+
+
+.gradient-text {
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
