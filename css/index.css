@@ -1011,3 +1011,8 @@ margin: 0;
     padding: 20px;
 }
 
+.clints img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}

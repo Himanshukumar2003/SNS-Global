@@ -71,7 +71,29 @@ var swiper = new Swiper('.banner', {
     },
 });
 
-
+var swiper = new Swiper(".clints", {
+    slidesPerView: 4,
+    spaceBetween: 20,
+    loop: true,
+    autoplay: {
+        delay:800,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 4,
+        },
+        576: {
+            slidesPerView: 3,
+        },
+        400: {
+            slidesPerView: 2,
+        },
+        0: {
+            slidesPerView: 1,
+        }
+    }
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     var statsSection = document.querySelector(".stats-container");
