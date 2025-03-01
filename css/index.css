@@ -86,7 +86,9 @@ h6 {
     font-weight: 500;
 }
 
-
+li{
+    list-style-type: none;
+}
 
 .section {
     padding: 60px 0;
@@ -827,17 +829,22 @@ margin: 0;
 
 
 
-.dubai-feature-list li {
+.dubai-feature-list li ,.service-list li {
     display: flex;
     align-items: start;
     gap: 10px;
 }
 
 
-.dubai-feature-list li i {
+.dubai-feature-list li i, .service-list li i {
     color: var(--primary-color);
     font-size: 20px;
 }
+
+.cards ul{
+padding-left: 10px !important;
+}
+
 
 
 
