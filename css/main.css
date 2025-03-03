@@ -222,3 +222,24 @@ p a:hover {
 .accordion-body{
     border-top: 2px solid var(--primary-color);
 }
+
+
+.resent-blog-card p{
+display: -webkit-box;
+overflow: hidden;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+}
+
+.resent-blog-card p a{
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    }
+
+
+    .resent-blog-card .btn{
+        padding: 0;
+        font-weight: 400;
+    }
