@@ -74,11 +74,12 @@ var swiper = new Swiper('.banner', {
 var swiper = new Swiper(".clints", {
     slidesPerView: 4,
     spaceBetween: 20,
-    loop: true,
-    autoplay: {
-        delay:800,
-        disableOnInteraction: false,
-    },
+    loop: false,
+      autoplay:false,
+      // {
+    //     delay:800,
+    //     disableOnInteraction: false,
+    // },
     breakpoints: {
         768: {
             slidesPerView: 4,
