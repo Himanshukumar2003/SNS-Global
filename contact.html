@@ -80,39 +80,37 @@
                     <!-- Contact Form -->
                     <div class="col-lg-6">
                         <div class="contact-section h-100">
-                            <form>
+                            <form action="contact.php" method="POST">
                                 <div class="row">
                                     <div class="col-md-6 col-12">
-                                        <input type="text" class="form-control mb-3" placeholder="Fist Name">
+                                        <input type="text" name="first_name" class="form-control mb-3" placeholder="First Name" required>
                                     </div>
                                     <div class="col-md-6 col-12">
-                                        <input type="text" class="form-control mb-3" placeholder="Last Name">
+                                        <input type="text" name="last_name" class="form-control mb-3" placeholder="Last Name" required>
                                     </div>
                                     <div class="col-md-6 col-12">
-                                        <input type="text" class="form-control mb-3" placeholder="Contact Number">
+                                        <input type="text" name="contact_number" class="form-control mb-3" placeholder="Contact Number" required>
                                     </div>
                                     <div class="col-md-6 col-12">
-                                        <input type="email" class="form-control mb-3" placeholder="Email ID">
+                                        <input type="email" name="email" class="form-control mb-3" placeholder="Email ID" required>
                                     </div>
                                     <div class="col-md-6 col-12">
-                                        <input type="text" class="form-control mb-3" placeholder="City">
+                                        <input type="text" name="city" class="form-control mb-3" placeholder="City" required>
                                     </div>
                                     <div class="col-md-6 col-12">
-                                        <input type="text" class="form-control mb-3" placeholder="State">
+                                        <input type="text" name="state" class="form-control mb-3" placeholder="State" required>
                                     </div>
                                     <div class="col-md-6 col-12">
-                                        <input type="tel" id="country" class="form-control mb-3" placeholder="Country">
+                                        <input type="text" name="country" class="form-control mb-3" placeholder="Country" required>
                                     </div>
                                     <div class="col-12">
-                                        <textarea class="form-control mb-3" rows="4" placeholder="Message"></textarea>
+                                        <textarea name="message" class="form-control mb-3" rows="4" placeholder="Message" required></textarea>
                                     </div>
                                     <div class="col-12">
                                         <button type="submit" class="btn1">Send Message</button>
                                     </div>
                                 </div>
                             </form>
-
-
                         </div>
                     </div>
 
