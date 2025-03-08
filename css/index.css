@@ -272,6 +272,10 @@ button:hover {
 width: 100%;
     }
 
+    .peage-header::before{
+        background: linear-gradient(to right, rgba(0, 77, 100, 0.8) 0%, rgba(0, 77, 100, 0.9) 100%, rgba(0, 77, 100, 0) 100%) !important;
+    }
+
 
     .navbar-collapse {
         background-color: var(--white);
