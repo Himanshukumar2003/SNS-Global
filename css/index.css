@@ -97,6 +97,7 @@ li{
 
 .section-two {
     padding: 100px 0 60px 0;
+    overflow: hidden;
 }
 
 p {
