@@ -320,6 +320,7 @@ button:hover {
 
 
 /* Base Styles */
+
 .hero-section {
     position: relative;
     display: flex;
@@ -448,6 +449,10 @@ button:hover {
 
     .learn-more-btn {
         padding: 0.5rem 1.5rem;
+    }
+
+    .hero-section{
+        overflow: hidden !important;
     }
 }
 
