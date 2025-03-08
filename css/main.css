@@ -127,7 +127,7 @@ p a:hover {
 
 }
 
-.img-round{
+.flip-img{
     transform: rotate(180deg) scaleY(-1);
 
 }
