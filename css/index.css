@@ -266,7 +266,11 @@ button:hover {
     .feature-list {
         width: 100% !important;
     }
-
+    .pr{
+        max-height: 300PX;
+        object-fit: cover;
+width: 100%;
+    }
 
 
     .navbar-collapse {
@@ -459,7 +463,7 @@ button:hover {
 
 @media (max-width: 480px) {
 
-
+    
     .description {
         font-size: 0.85rem;
     }
