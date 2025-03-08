@@ -1,3 +1,4 @@
+
 <?php 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $firstName = htmlspecialchars($_POST['first_name']);
@@ -7,9 +8,10 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $city = htmlspecialchars($_POST['city']);
     $state = htmlspecialchars($_POST['state']);
     $country = htmlspecialchars($_POST['country']);
+    $service = htmlspecialchars($_POST['service']);
     $messageContent = htmlspecialchars($_POST['message']);
 
-    $to = 'admin@sns-global.com'; // Update with the correct email address
+    $to = 'admin@sns-global.com'; // Update with correct email
     $subject = "SNS Global Inquiry";
 
     $message = "
@@ -25,6 +27,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         <p><strong>City:</strong> $city</p>
         <p><strong>State:</strong> $state</p>
         <p><strong>Country:</strong> $country</p>
+        <p><strong>Service Selected:</strong> $service</p>
         <p><strong>Message:</strong> $messageContent</p>
     </body>
     </html>";

@@ -326,7 +326,7 @@ button:hover {
     align-items: center;
     min-height: 80vh;
     /* Better for smaller screens */
-    background: rgba(17, 61, 72, 0.7);
+    background: rgba(17, 61, 72, 0.6);
     padding: 50px 0;
 }
 
@@ -471,6 +471,7 @@ button:hover {
 .circular-swiper .swiper-slide {
     overflow: hidden;
 }
+
 
 
 
