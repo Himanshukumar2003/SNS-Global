@@ -121,14 +121,14 @@ document.addEventListener("DOMContentLoaded", function () {
     var animationTriggered = false;
 
     function animateNumbers() {
-        statNumbers.forEach((element) => {
+        statNumbers.forEach(function (element) {
             var target = parseFloat(element.getAttribute("data-target"));
             var current = 0;
             var increment = target / 100; // Smooth count
             var duration = 2000; // 2 seconds
             var stepTime = duration / 100;
 
-            var counter = setInterval(() => {
+            var counter = setInterval(function () {
                 current += increment;
                 if (current >= target) {
                     element.innerHTML = target + element.innerHTML.replace(/[0-9.]+/, ""); // Keep existing text
