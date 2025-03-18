@@ -1056,10 +1056,23 @@ padding-left: 10px !important;
     width: 100%;
     height: 100px;
     object-fit: contain;
+    mix-blend-mode: multiply !important;
     display: block;
-    margin: auto;
 }
 
+.clints-img{
+    mix-blend-mode: multiply;
+    width: 100%;
+}
+
+
+
+.partner-logo img{
+    mix-blend-mode: multiply;
+    width: 100%;
+
+
+}
 
 
 .gradient-text {

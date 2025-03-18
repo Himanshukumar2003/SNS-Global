@@ -79,9 +79,9 @@
             </div>
         </div>
     </section>
-    <div class="section">
+    <div class="section ">
         <div class="container">
-            <div class="row g-4">
+            <div class="row g-5">
                 <div class="col-lg-6">
                     <div class="service-img">
                         <img src="img/Services/pr.jpg" class="img-fluid h-100   " data-aos="zoom-in"
@@ -231,66 +231,29 @@
         </div>
   
     </div>
-    <div class="section bg-light">
+    <div class="partner-section  section">
         <div class="container">
-            <div class="section-title">
-                <h2>Our Clients</h2>
-            </div>
-            
-            <div class="row g-5 ">
-                <!-- Partner 1 -->
-                <div class="col-6 col-md-3">
-                    <div class="partner-logo">
-                        <img src="img/pr-patners/img-4.png" alt="Partner Logo">
-                    </div>
+            <div class="row align-items-center justify-content-center">
+                <!-- Left Side - Hindi Heading & Description -->
+                <div class="col-lg-4 col-md-12">
+                    <h2>Our <span class="gradient-text">clients</span></h2>
+                    <p>We value our clients and strive to deliver the best solutions tailored to their needs. Your trust
+                        is our motivation to excel.</p>
                 </div>
-                
-                <!-- Partner 2 -->
-                <div class="col-6 col-md-3">
-                    <div class="partner-logo">
-                        <img src="img/pr-patners/img-3.png" alt="Partner Logo">
-                    </div>
-                </div>
-                
-                <!-- Partner 3 -->
-                <div class="col-6 col-md-3">
-                    <div class="partner-logo">
-                        <img src="img/pr-patners/img-5.jpg" alt="Partner Logo">
-                    </div>
-                </div>
-                
-                <!-- Partner 4 -->
-                <div class="col-6 col-md-3">
-                    <div class="partner-logo">
-                        <img src="img/pr-patners/img-6.png" alt="Partner Logo">
-                    </div>
-                </div>
-                
-                <!-- Partner 5 -->
-                <div class="col-6 col-md-3">
-                    <div class="partner-logo partner-logo-two">
-                        <img src="img/pr-patners/img-7.png" alt="Partner Logo">
-                    </div>
-                </div>
-                
-                <!-- Partner 6 -->
-                <div class="col-6 col-md-3">
-                    <div class="partner-logo partner-logo-two ">
-                        <img src="img/pr-patners/img-8.png" alt="Partner Logo">
-                    </div>
-                </div>
-                
-                <!-- Partner 7 -->
-                <div class="col-6 col-md-3">
-                    <div class="partner-logo">
-                        <img src="img/pr-patners/raffles.png" alt="Raffles Partner Logo">
-                    </div>
-                </div>
-                
-                <!-- Partner 8 -->
-                <div class="col-6 col-md-3">
-                    <div class="partner-logo">
-                        <img src="img/pr-patners/unnamed.png" alt="Partner Logo">
+    
+                <!-- Right Side - Swiper Slider -->
+                <div class="col-lg-8 col-md-12">
+                    <div class="swiper clints d-flex align-items-center">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide "><div class="partner-logo"><img class="clints-img " src="img/pr-patners/img-4.png" alt="Client 1"></div></div>
+                            <div class="swiper-slide"><div class="partner-logo"><img class="clints-img" src="img/pr-patners/img-3.png" alt="Client 2"></div></div>
+                            <div class="swiper-slide"><div class="partner-logo"><img class="clints-img" src="img/pr-patners/img-5.jpg" alt="Client 3"></div></div>
+                            <div class="swiper-slide"><div class="partner-logo"><img class="clints-img" src="img/pr-patners/img-6.png" alt="Client 4"></div></div>
+                            <div class="swiper-slide"><div class="partner-logo"><img class="clints-img" src="img/pr-patners/img-7.png" alt="Client 5"></div></div>
+                            <div class="swiper-slide"><div class="partner-logo"><img class="clints-img" src="img/pr-patners/img-8.png" alt="Client 6"></div></div>
+                            <div class="swiper-slide"><div class="partner-logo"><img class="clints-img" src="img/pr-patners/img-2.png" alt="Client 7"></div></div>
+                            <div class="swiper-slide"><div class="partner-logo"><img class="clints-img" src="img/pr-patners/img-1.png" alt="Client 8"></div></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -366,14 +329,40 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="/js/index.js"></script>
 
+    
     <script>
+        
         AOS.init({
             duration: 1000,
             once: true
         });
+
+     var swiper = new Swiper(".clints", {
+    slidesPerView: 4,
+    spaceBetween: 10,
+    loop: true,
+      autoplay: {
+        delay:800,
+        disableOnInteraction: false,
+    },
+    breakpoints: {
+        768: {
+            slidesPerView: 5,
+        },
+        576: {
+            slidesPerView: 3,
+        },
+        400: {
+            slidesPerView: 2,
+        },
+        0: {
+            slidesPerView: 1,
+        }
+    }
+});
     </script>
+
 </body>
 
 </html>
