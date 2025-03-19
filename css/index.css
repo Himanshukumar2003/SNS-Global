@@ -1065,11 +1065,18 @@ padding-left: 10px !important;
     width: 100%;
 }
 
-
+.partner-logo{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+min-height: 200px;
+}
 
 .partner-logo img{
     mix-blend-mode: multiply;
     width: 100%;
+height: auto !important;
 
 
 }
