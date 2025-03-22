@@ -1095,3 +1095,7 @@ height: auto !important;
     z-index: 2;
 }
 
+.slide-content img {
+border-radius: 10px;
+box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+}
