@@ -64,6 +64,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".form-swiper", {
+        slidesPerView: 1,
+        loop: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    });
+});
+
 
 var swiper = new Swiper(".expanding", {
     loop: false,
